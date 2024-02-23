@@ -23,7 +23,7 @@ export async function checkBalance(
         params: [accountNumber, 'latest'],
       });
 
-      // Convert the balance to something human readable
+      // Convert the balance to something readable
       const parsedBalance = parseInt(balance) / Math.pow(10, 18);
       displayBalance.innerText = parsedBalance;
 
@@ -47,6 +47,6 @@ export async function checkBalance(
 }
 
 export function displayErrorMessage(message) {
-  // Throw an Error with the message
+  // Throw an Error with the message, added this while testing
   throw new Error(message);
 }
