@@ -82,6 +82,31 @@ body {
   background-color: #fdc24c;
 }
 
+#transactionHistory {
+  margin-top: 20px; /* Add some margin at the top */
+}
+
+#transactionHistory h3 {
+  margin-bottom: 10px; /* Add some margin below the heading */
+}
+
+#transactionList {
+  list-style-type: none;
+  padding: 0;
+  max-width: 100%; /* Ensure transaction list stays within container */
+  overflow-x: auto; /* Add horizontal scroll if necessary */
+}
+
+#transactionList li {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  font-size: 14px; /* Set smaller font size for transaction list items */
+}
+
+#transactionList li:last-child {
+  border-bottom: none;
+}
+
 .bg {
   position: absolute; /* Position the background absolutely */
   top: 0;
